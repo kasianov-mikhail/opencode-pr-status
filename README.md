@@ -6,7 +6,7 @@ A pill above the composer shows the pull request for your current branch: its nu
 colour for its checks. Without a pull request on the branch, the pill counts every open pull
 request and takes the colour of the worst one. Click it to see the list.
 
-Each row shows the check state, the branch, the review state, and a draft marker. Clicking a
+Each row shows the check state, the review state, and a draft marker. Clicking a
 row opens the pull request in the browser.
 
 ## Requirements

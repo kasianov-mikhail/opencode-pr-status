@@ -49,7 +49,6 @@ const pull = (row: GhPull, head: string): Pull => ({
   number: row.number,
   title: row.title,
   url: row.url,
-  branch: row.headRefName,
   draft: row.isDraft,
   current: head !== "" && row.headRefName === head,
   review: row.reviewDecision ?? "",

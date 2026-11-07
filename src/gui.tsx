@@ -125,7 +125,7 @@ export default Plugin.define({
           label: `#${pull.number} ${pull.title}`,
           icon: icon(pull),
           tone: tone(pull),
-          detail: [pull.branch, pull.draft ? "draft" : "", review(pull)].filter(Boolean).join(" · "),
+          detail: [pull.draft ? "draft" : "", review(pull)].filter(Boolean).join(" · "),
           run: () => ctx.system.openExternal(pull.url),
         }))
 

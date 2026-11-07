@@ -6,7 +6,6 @@ export interface Pull {
   number: number
   title: string
   url: string
-  branch: string
   draft: boolean
   current: boolean
   review: string
@@ -24,13 +23,12 @@ const pull = {
     number: { type: "number" },
     title: { type: "string" },
     url: { type: "string" },
-    branch: { type: "string" },
     draft: { type: "boolean" },
     current: { type: "boolean" },
     review: { type: "string" },
     checks: { type: "string" },
   },
-  required: ["number", "title", "url", "branch", "draft", "current", "review", "checks"],
+  required: ["number", "title", "url", "draft", "current", "review", "checks"],
   additionalProperties: false,
 } as const
 
